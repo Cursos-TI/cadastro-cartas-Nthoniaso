@@ -7,22 +7,26 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
     // ===== CARTA 1 =====
-     char estado, estado1; 
-    char codigo [5];
-    char codigocarta [5];
-    char nomecidade1[50];
-    int populacao, pontoturistico;
-    float area; 
+     char estado, estado1 = "AMAZONAS"; 
+    char codigo [5]= "A";
+    char codigocarta [5]= "A01";
+    char nomecidade1[50]= "MANAUS";
+    int populacao = 2303732;
+    float area = 11401092.0;
+    float pib = 127.6;
+    int ponto_turistico= 40;
+   
   
 
  // ===== CARTA 2 =====
     char estado, estado2;
+    char codigo [5];
     char codigocarta[5];
     char nomecidade2[50];
     int populacao2;
     float area2;
     float pib2;
-    int pontosTuristicos2;
+    int ponto_turistico2;
 
   // Área para entrada de dados
 
@@ -32,19 +36,19 @@ int main() {
     printf("Digite uma letra de 'A' a 'H' (representando um dos oito estados):  \n");
     scanf(" %c", &estado); 
 
-    printf("Digite a letra do estado seguida de um número de 01 a 04:  \n");
+    printf("Digite a letra do estado seguida de um número de 01 a 04: \n");
     scanf(" %s", codigo);
 
-    printf("Digite o nome da cidade:  \n");
+    printf("Digite o nome da cidade:MANAUS  \n");
     scanf(" %s", &cidade);
 
-    printf("Digite o número de habitantes da cidade:  \n");
+    printf("Digite o número de habitantes da cidade: \n");
     scanf(" %d", &populacao);
 
-    printf("Digite a área da cidade em quilômetros quadrados:  \n");
+    printf("Digite a área da cidade em quilômetros quadrados: \n");
     scanf(" %f", &area);
 
-    printf("Digite o Produto Interno Bruto da cidade:  \n");
+    printf("Digite o Produto Interno Bruto da cidade: \n");
     scanf(" %f", &pib);
 
     printf("Digite a quantidade de pontos turísticos na cidade: \n");
